@@ -68,6 +68,7 @@ install_requires = [
     f'invenio[base,auth,metadata,files]{invenio_version}',
     'invenio-logging[sentry-sdk]>=1.3.0,<1.4.0',
     'invenio-rdm-records>=0.34.4,<0.35.0',
+    'invenio-theme>=1.3.16'
 ]
 
 packages = find_packages()

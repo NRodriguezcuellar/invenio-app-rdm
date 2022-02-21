@@ -1,0 +1,47 @@
+.community-selection-modal {
+  height: 95vh;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  .community-list-results {
+    height: calc(55vh - 10em) !important;
+  }
+
+  .community-list-result-item {
+    min-height: 6.5rem !important;
+
+    .header {
+      white-space: normal;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .segment {
+    box-shadow: none !important;
+  }
+
+  .community-list-result-item-placeholder {
+    height: 8rem !important;
+    min-height: 6rem !important;
+
+    .header {
+      margin: 0 !important;
+    }
+  }
+
+  .community-list-result-item-button-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto !important;
+  }
+ 
+  .community-selection-footer {
+    margin-top: 1.5rem;
+  }
+}
+
+.community-selection-modal.visible.transition {
+  display: flex !important;
+}

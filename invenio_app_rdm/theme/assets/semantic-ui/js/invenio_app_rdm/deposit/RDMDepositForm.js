@@ -36,6 +36,7 @@ import {
 import { AccordionField } from "react-invenio-forms";
 import { Card, Container, Divider, Grid, Ref, Sticky } from "semantic-ui-react";
 import { i18next } from "@translations/invenio_app_rdm/i18next";
+import { CommunitySelectionModal } from "./CommunitySelectionModal";
 
 export class RDMDepositForm extends Component {
   constructor(props) {
@@ -144,13 +145,14 @@ export class RDMDepositForm extends Component {
       >
         <FormFeedback fieldPath="message" />
         <Container style={{ marginTop: "10px" }}>
+          <CommunitySelectionModal />
           <DepositFormTitle />
           <Grid>
             <Grid.Row>
               <Grid.Column width={11}>
                 <AccordionField
                   fieldPath=""
-                  active={true}
+                  active
                   label={i18next.t("Files")}
                   ui={this.accordionStyle}
                 >
@@ -176,7 +178,7 @@ export class RDMDepositForm extends Component {
 
                 <AccordionField
                   fieldPath=""
-                  active={true}
+                  active
                   label={i18next.t("Basic information")}
                   ui={this.accordionStyle}
                 >
@@ -215,8 +217,8 @@ export class RDMDepositForm extends Component {
                   <PublicationDateField required />
                   <CreatibutorsField
                     label={i18next.t("Creators")}
-                    labelIcon={"user"}
-                    fieldPath={"metadata.creators"}
+                    labelIcon="user"
+                    fieldPath="metadata.creators"
                     roleOptions={this.vocabularies.metadata.creators.role}
                     schema="creators"
                     required
@@ -267,15 +269,15 @@ export class RDMDepositForm extends Component {
 
                 <AccordionField
                   fieldPath=""
-                  active={true}
+                  active
                   label={i18next.t("Recommended information")}
                   ui={this.accordionStyle}
                 >
                   <CreatibutorsField
                     addButtonLabel={i18next.t("Add contributor")}
                     label={i18next.t("Contributors")}
-                    labelIcon={"user plus"}
-                    fieldPath={"metadata.contributors"}
+                    labelIcon="user plus"
+                    fieldPath="metadata.contributors"
                     roleOptions={this.vocabularies.metadata.contributors.role}
                     schema="contributors"
                     modal={{
@@ -332,7 +334,7 @@ export class RDMDepositForm extends Component {
 
                 <AccordionField
                   fieldPath=""
-                  active={true}
+                  active
                   label={i18next.t("Alternate identifiers")}
                   ui={this.accordionStyle}
                 >
@@ -348,7 +350,7 @@ export class RDMDepositForm extends Component {
 
                 <AccordionField
                   fieldPath=""
-                  active={true}
+                  active
                   label={i18next.t("Related works")}
                   ui={this.accordionStyle}
                 >
@@ -384,7 +386,7 @@ export class RDMDepositForm extends Component {
 
                     <AccessRightField
                       label={i18next.t("Visibility")}
-                      labelIcon={"shield"}
+                      labelIcon="shield"
                     />
                   </Sticky>
                 </Grid.Column>

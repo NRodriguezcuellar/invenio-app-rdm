@@ -43,7 +43,7 @@ theme = WebpackThemeBundle(
                 'react-dropzone': "^11.0.0",
                 "react-i18next": "^11.11.0",
                 'react-invenio-deposit': '^0.17.0',
-                'react-invenio-forms': '^0.9.0',
+                'react-invenio-forms': '^0.9.4',
                 'yup': '^0.32.0',
             },
             aliases={
