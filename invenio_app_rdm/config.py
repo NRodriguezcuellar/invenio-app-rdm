@@ -160,7 +160,7 @@ THEME_SITENAME = _('InvenioRDM')
 # Invenio-Communities
 # ===================
 
-COMMUNITIES_ENABLED = False
+COMMUNITIES_ENABLED = True
 """Control if community views and endpoints are enabled."""
 
 
