@@ -1,0 +1,27 @@
+#request-timeline {
+  .ui.feed {
+    overflow: hidden;
+
+    .event.request-status-event {
+      margin: -3em 0 0 1.25em;
+      padding: 3em 0 2em 2.25em;
+      position: relative;
+      box-shadow: -1px 0 0 rgba(34, 36, 38, .15);
+
+      .label {
+        position: relative;
+
+        .request-status-icon {
+          background-color: #ffffff;
+          position: absolute;
+          right: 0;
+          left: -49px;
+          top: 2px;
+          bottom: 0;
+        }
+      }
+
+    }
+
+  }
+}
