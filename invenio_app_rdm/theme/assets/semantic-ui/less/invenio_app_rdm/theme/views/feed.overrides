@@ -1,7 +1,5 @@
 #request-timeline {
   .ui.feed {
-    overflow: hidden;
-
     .event.request-status-event {
       margin: -3em 0 0 1.25em;
       padding: 3em 0 2em 2.25em;
@@ -20,6 +18,10 @@
           bottom: 0;
         }
       }
+
+    }
+
+    .request-status-event:last-child {
 
     }
 
