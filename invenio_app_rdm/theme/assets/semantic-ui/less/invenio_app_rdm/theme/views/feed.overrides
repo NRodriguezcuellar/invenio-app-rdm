@@ -18,11 +18,16 @@
           bottom: 0;
         }
       }
+    }
 
+    .request-status-event:first-child {
+      margin-top: 0;
+      padding-top: 0;
     }
 
     .request-status-event:last-child {
-
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
 
   }
