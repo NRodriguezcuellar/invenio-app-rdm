@@ -15,7 +15,9 @@ body {
 }
 
 .hidden {
-  display: none;
+  &:not(input[type="radio"]) {
+    display: none;
+  }
 }
 
 .mobile.only {
